@@ -2,7 +2,7 @@
   hosts: localhost
   vars: #variable declaration
     Course: "Terraform"
-    Trainer: "Siva"
+    Trainer: "Siva Kumar Reddy M"
     Duration: "15hrs"
   tasks:
   - name: print information
