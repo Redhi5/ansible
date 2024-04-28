@@ -11,3 +11,6 @@
   - name: PLAY-2 and TASK-1
     ansible.builtin.debug:
       msg: "Hello I am from PLAY-2 and TASK-1"
+
+
+#ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 03-multi-play.yaml
