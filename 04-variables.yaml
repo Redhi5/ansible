@@ -1,0 +1,14 @@
+- name: variables
+  hosts: localhost
+  vars: #variable declaration
+    Course: "Terraform"
+    Trainer: "Siva"
+    Duration: "15hrs"
+  tasks:
+  - name: print information
+    ansible.builtin.debug:
+      msg: "Hi, We are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}."
+
+
+
+#ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 04-variables.yaml
